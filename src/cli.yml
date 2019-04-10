@@ -1,7 +1,7 @@
 name: knocknockbiem
 version: "1.0"
 author: Martijn Heil <m.heil375@gmail.com>
-about: Does awesome things
+about: A simple port knocking client
 args:
     - delay:
         short: i
