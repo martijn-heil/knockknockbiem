@@ -6,6 +6,6 @@ use std::time::Duration;
 pub fn knock(to: &[&ToSocketAddrs], delay: u64) {
   for addr in to {
     TcpStream::connect(addr);
-    sleep(Duration::from_secs(5));
+    sleep(Duration::from_secs(delay));
   }
 }
