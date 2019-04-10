@@ -1,0 +1,11 @@
+name: knocknockbiem
+version: "1.0"
+author: Martijn Heil <m.heil375@gmail.com>
+about: Does awesome things
+args:
+    - delay:
+        short: i
+        long: interval
+        value_name: INTERVAL
+        help: Interval between knocks in seconds.
+        takes_value: true
