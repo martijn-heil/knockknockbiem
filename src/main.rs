@@ -11,14 +11,13 @@ fn main() -> Result<()> {
     .value_name("HOST")
     .help("Host to knock at")
     .index(1))
-  .arg(Arg::with_name("port")
-    .value_name("PORT")
+  .arg(Arg::with_name("ports")
+    .value_name("PORTS")
     .help("Port to knock")
     .index(2)
     .multiple(true))
   .get_matches();
-  .get_matches();
   
   let mut interval = value_t!(matches, "interval", u32).unwrap_or(1);
-  let mut ports = 
+  let mut ports = matches.values_of("ports").unwrap().collect::Vec<u16>();
 }
